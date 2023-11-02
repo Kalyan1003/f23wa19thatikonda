@@ -1,0 +1,15 @@
+extends layout
+block content
+ h1 RESULTS.
+
+    - var x = Math.floor(Math.random() * 10);
+    - var y = Math.floor(Math.random() * 10);
+    - var res1 = Math.pow (x, 2);
+    - var res2 = Math.sign (y);
+    - var res3 = Math.tanh(x);
+    - var res4 = Math.trunc(y)
+
+ p Math.pow(#{x}) is #{res1}
+ p Math.sign(#{y}) is #{res2}
+ p Math.tanh(#{x}) is #{res3}
+ p Math.trunc(#{x}) is #{res3}
